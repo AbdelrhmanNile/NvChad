@@ -288,15 +288,17 @@ return packer.startup(function()
       end,
    }
 
-   use {
-      'sudormrfbin/cheatsheet.nvim',
-    
-      requires = {
-        {'nvim-telescope/telescope.nvim'},
-        {'nvim-lua/popup.nvim'},
-        {'nvim-lua/plenary.nvim'},
-      }
-    }
+   use {      
+    "sudormrfbin/cheatsheet.nvim",
+    disable = not plugin_settings.status.cheatsheet,
+    module = "cheatsheet",
+    config = function()        
+      require "plugins.configs.cheatsheet"
+    end,
+    setup = function()
+      require("core.mappings").cheatsheet()
+    end,
+  }
 
     -- Lua
 use {

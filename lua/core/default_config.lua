@@ -64,6 +64,7 @@ M.plugins = {
       bufferline = true, -- list open buffers up the top, easy switching too
       colorizer = true, -- color RGB, HEX, CSS, NAME color codes
       comment = true, -- easily (un)comment code, language aware
+      cheatsheet = true,
       dashboard = true, -- NeoVim 'home screen' on open
       esc_insertmode = true, -- map to <ESC> with no lag
       feline = true, -- statusline
@@ -195,6 +196,11 @@ M.mappings.plugins = {
       telescope_media = {
          media_files = "<leader>fp",
       },
+   },
+
+   cheatsheet = {
+      default_keys = "<leader>dk",
+      user_keys = "<leader>uk",
    },
 }
 
