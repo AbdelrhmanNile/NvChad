@@ -71,6 +71,8 @@ local disabled_built_ins = {
    "zip",
    "zipPlugin",
 }
+  -- Stop sourcing filetype.vim
+  vim.g.did_load_filetypes = 1
 
 for _, plugin in pairs(disabled_built_ins) do
    g["loaded_" .. plugin] = 1

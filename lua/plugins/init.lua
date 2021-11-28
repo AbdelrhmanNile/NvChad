@@ -262,5 +262,54 @@ return packer.startup(function()
       end,
    }
 
+
+   use { "nathom/filetype.nvim" }
+   use { "Manas140/run.nvim"}
+   use {'williamboman/nvim-lsp-installer'}
+
+   use {
+      "Pocco81/AutoSave.nvim",
+      config = function()
+         local autosave = require "autosave"
+   
+         autosave.setup {
+            enabled = true,
+            execution_message = "autosaved at : " .. vim.fn.strftime "%H:%M:%S",
+            events = { "InsertLeave", "TextChanged" },
+            conditions = {
+               exists = true,
+               filetype_is_not = {},
+               modifiable = true,
+            },
+            clean_command_line_interval = 2500,
+            on_off_commands = true,
+            write_all_buffers = false,
+         }
+      end,
+   }
+
+   use {
+      'sudormrfbin/cheatsheet.nvim',
+    
+      requires = {
+        {'nvim-telescope/telescope.nvim'},
+        {'nvim-lua/popup.nvim'},
+        {'nvim-lua/plenary.nvim'},
+      }
+    }
+
+    -- Lua
+use {
+   "folke/which-key.nvim",
+   config = function()
+     require("which-key").setup {
+       -- your configuration comes here
+       -- or leave it empty to use the default settings
+       -- refer to the configuration section below
+     }
+   end
+ }
+
+
    require("core.hooks").run("install_plugins", use)
 end)

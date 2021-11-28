@@ -97,6 +97,11 @@ end
 -- requires a file containing user's lspconfigs
 
 local addlsp_confs = require("core.utils").load_config().plugins.options.lspconfig.setup_lspconf
+require'lspconfig'.bashls.setup{}
+
+require'lspconfig'.pylsp.setup{}
+require'lspconfig'.clangd.setup{}
+
 
 if #addlsp_confs ~= 0 then
    require(addlsp_confs).setup_lsp(on_attach, capabilities)
