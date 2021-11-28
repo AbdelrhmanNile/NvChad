@@ -35,7 +35,7 @@ M.options = {
       window_nav = true,
       theme_toggler = false,
       -- used for updater
-      update_url = "https://github.com/NvChad/NvChad",
+      update_url = "https://github.com/AbdelrhmanNile/NvChad",
       update_branch = "main",
    },
 }
