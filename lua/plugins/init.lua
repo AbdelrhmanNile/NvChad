@@ -262,7 +262,6 @@ return packer.startup(function()
       end,
    }
 
-
    use { "nathom/filetype.nvim" }
    use { "Manas140/run.nvim"}
    use {'williamboman/nvim-lsp-installer'}
@@ -299,19 +298,6 @@ return packer.startup(function()
       require("core.mappings").cheatsheet()
     end,
   }
-
-    -- Lua
-use {
-   "folke/which-key.nvim",
-   config = function()
-     require("which-key").setup {
-       -- your configuration comes here
-       -- or leave it empty to use the default settings
-       -- refer to the configuration section below
-     }
-   end
- }
-
 
    require("core.hooks").run("install_plugins", use)
 end)
