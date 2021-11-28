@@ -130,6 +130,13 @@ Without/with Treesitter:
 - Indentlines with [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim).
 - Useful snippets with [LuaSnip](https://github.com/L3MON4D3/LuaSnip).
 
+## THE STUFF I [AbdelrhmanNile](https://github.com/AbdelrhmanNile/) ADDED
+- brought back [cheatsheet](https://github.com/sudormrfbin/cheatsheet.nvim/), why did you remove it siduck?:(.
+- now you can run your code inside Nvchad with this cool plugin [Run.nvim](https://github.com/Manas140/run.nvim).
+- Auto save with [autoSave.nvim](https://github.com/Pocco81/AutoSave.nvim).
+- A fast and lua alternative to filetype.vim. It is ~175x faster than filetype.vim, [filetype.nvim](https://github.com/nathom/filetype.nvim)
+
+
 ## Bloat
 
 To everyone who thinks that NvChad is bloat: Bloat means different things to everyone.
@@ -146,35 +153,9 @@ NvChad is focusing more on improving its already existing plugins and features i
 - Debloating the config.
 - Adding more themes.
 
-## Try NvChad in a Docker container
-
-This will leave your current Neovim configuration untouched. Once you exit Neovim, the image is deleted.
-
-```zsh
-  docker run -w /root -it --rm alpine:edge sh -uelic '
-    apk add git nodejs neovim ripgrep alpine-sdk --update
-    git clone https://github.com/NvChad/NvChad ~/.config/nvim
-    nvim -c "autocmd User PackerComplete quitall" -c "PackerSync"
-    nvim
-    '
-```
-
-## Chadributors
-
-<a href="https://github.com/NvChad/NvChad/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=NvChad/NvChad"/>
-</a>
 
 ## Warning
 
 If you have an issue with a plugin in NvChad, first you should report it to NvChad to see if it's an issue with it.
 
-## :gift_heart: Support
 
-I would happily accept donations but would feel awful since I'm not the only one who has worked on NvChad. The project has only been made possible by the many great contributors and plugin developers, thus taking the donations just for me feels unjustified. If you enjoy using NvChad and would like to show your support then try to be a better you! Help the people in need whenever possible and do charity work. Be nice to loved ones and strangers alike. Do not be rude, always try to be helpful and caring for one another. It's easy to hate but hard to care. Be respectful to any software/work done by other people rather than making fun of them. Do not compare software (In a bad way). I'm grateful to even be able to use NeoVim! But I still cannot be fully happy when I know that there are people who barely have any food to eat, starve for weeks, dont have access to proper education, comupters, basic health care facilities and more. Here are some charites and gofundme links you can donate to instead:
-
-- https://www.gofundme.com/f/WeCareAboutSyria
-- https://www.gofundme.com/f/Burundi-Nutrition
-- https://charity.gofundme.com/o/en/campaign/feedingyemen
-- https://www.gofundme.com/f/6p8ea-give-ghanaian-orphans-the-gift-of-a-ride-to-school
-- https://www.isupportmyanmar.com
