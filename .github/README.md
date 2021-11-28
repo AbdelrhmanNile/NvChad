@@ -130,10 +130,10 @@ Without/with Treesitter:
 - Indentlines with [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim).
 - Useful snippets with [LuaSnip](https://github.com/L3MON4D3/LuaSnip).
 
-## THE STUFF I [AbdelrhmanNile](https://github.com/AbdelrhmanNile/) ADDED
+## THE STUFF I {[AbdelrhmanNile](https://github.com/AbdelrhmanNile/)} ADDED
 - brought back [cheatsheet](https://github.com/sudormrfbin/cheatsheet.nvim/), why did you remove it siduck?:(.
-- now you can run your code inside Nvchad with this cool plugin [Run.nvim](https://github.com/Manas140/run.nvim).
-- Auto save with [autoSave.nvim](https://github.com/Pocco81/AutoSave.nvim).
+- now you can run your code inside Nvchad with this cool plugin [run.nvim](https://github.com/Manas140/run.nvim).
+- Auto save with [autosave.nvim](https://github.com/Pocco81/AutoSave.nvim).
 - A fast and lua alternative to filetype.vim. It is ~175x faster than filetype.vim, [filetype.nvim](https://github.com/nathom/filetype.nvim)
 
 
