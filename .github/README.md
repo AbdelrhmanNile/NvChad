@@ -131,11 +131,13 @@ Without/with Treesitter:
 - Useful snippets with [LuaSnip](https://github.com/L3MON4D3/LuaSnip).
 
 ## THE STUFF I {[AbdelrhmanNile](https://github.com/AbdelrhmanNile/)} ADDED
-- brought back [cheatsheet](https://github.com/sudormrfbin/cheatsheet.nvim/), why did you remove it siduck?:(.
-- now you can run your code inside Nvchad with this cool plugin [run.nvim](https://github.com/Manas140/run.nvim).
+- Brought back [cheatsheet](https://github.com/sudormrfbin/cheatsheet.nvim/), why did you remove it siduck?:(.
+- Now you can run your code inside Nvchad with this cool plugin [run.nvim](https://github.com/Manas140/run.nvim).
 - Auto save with [autosave.nvim](https://github.com/Pocco81/AutoSave.nvim).
-- A fast and lua alternative to filetype.vim. It is ~175x faster than filetype.vim, [filetype.nvim](https://github.com/nathom/filetype.nvim)
+- A fast and lua alternative to filetype.vim. It is ~175x faster than filetype.vim, [filetype.nvim](https://github.com/nathom/filetype.nvim).
+- Companion plugin for nvim-lspconfig that allows you to seamlessly manage LSP servers locally with :LspInstall, [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer).
 
+i also installed some language servers for c++ and python and bash. 
 
 ## Bloat
 
